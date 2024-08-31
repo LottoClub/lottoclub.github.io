@@ -6,6 +6,9 @@
     <title>Dona a LottoClub</title>
     <!-- Link to the favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
         /* General page styles */
         body {
@@ -14,8 +17,9 @@
             align-items: center;     /* Vertically centers content */
             height: 100vh;           /* Sets the height to full viewport */
             margin: 0;               /* Removes default margin */
-            background-color: #f0f0f0; /* Optional background color */
-            font-family: Arial, sans-serif; /* Sets default font */
+            background-color: #c48f47; /* Background color */
+            font-family: "Roboto", sans-serif; /* Sets default font */
+            font-weight: 700;
         }
 
         /* Centering the form */
@@ -24,7 +28,7 @@
             flex-direction: column; /* Stacks children vertically */
             align-items: center;     /* Centers children horizontally */
             padding: 20px;
-            border: 2px solid #ccc;  /* Optional border */
+            border: 2px solid #ccc;  /* Border */
             border-radius: 10px;     /* Rounded corners */
             background-color: #fff;  /* White background for form */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -37,13 +41,28 @@
             margin-bottom: 10px;
             color: #333; /* Text color */
         }
+
+        /* Styled warning message */
+        .donation-small-text {
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            color: #d9534f; /* Red text color for attention */
+            background-color: #f9e5e5; /* Light red background for emphasis */
+            border: 1px solid #d9534f; /* Border matching text color */
+            padding: 10px;
+            border-radius: 5px; /* Rounded corners */
+            width: 80%;
+            box-sizing: border-box; /* Ensures padding doesn't affect width */
+        }
     </style>
 </head>
 <body>
 
     <div class="centered-form">
         <!-- Text above the button -->
-        <div class="donation-text">Dona a LottoClub</div>
+        <div class="donation-text">Clicca il pulsante qua sotto per donare!</div>
+        <!-- Improved Warning Message -->
+        <div class="donation-small-text">Assicurati di essere connesso a <strong>donazioni.giancarlopisano.it</strong> per la tua sicurezza.</div>
         <!-- PayPal Donation Form -->
         <form action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="business" value="VD4LLFB4PTRXC" />
