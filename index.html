@@ -67,6 +67,13 @@
             border-radius: 5px; /* Rounded corners */
             width: 80%;
             box-sizing: border-box; /* Ensures padding doesn't affect width */
+            display: flex; /* Aligns the icon and text */
+            align-items: center;
+        }
+
+        .warning-icon {
+            font-size: 1.2em;
+            margin-right: 5px;
         }
 
         /* Social media links styling */
@@ -96,8 +103,11 @@
         <div class="large-text">LottoClub</div>
         <!-- Text above the button -->
         <div class="donation-text">Clicca il pulsante qua sotto per donare!</div>
-        <!-- Improved Warning Message -->
-        <div class="donation-small-text">Assicurati di essere connesso a <strong>donazioni.giancarlopisano.it</strong> per la tua sicurezza.</div>
+        <!-- Improved Warning Message with Icon -->
+        <div class="donation-small-text">
+            <span class="warning-icon">⚠️</span>
+            Assicurati di essere connesso a <strong>donazioni.giancarlopisano.it</strong> per la tua sicurezza.
+        </div>
         <!-- PayPal Donation Form -->
         <form action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="business" value="VD4LLFB4PTRXC" />
