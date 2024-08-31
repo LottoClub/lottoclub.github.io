@@ -13,6 +13,7 @@
         /* General page styles */
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center; /* Horizontally centers content */
             align-items: center;     /* Vertically centers content */
             height: 100vh;           /* Sets the height to full viewport */
@@ -33,6 +34,19 @@
             background-color: #fff;  /* White background for form */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
             text-align: center;      /* Center-aligns the text */
+            margin-bottom: 20px;
+        }
+
+        /* Logo and large text styling */
+        .logo {
+            width: 100px; /* Adjust size as needed */
+            margin-bottom: 10px;
+        }
+
+        .large-text {
+            font-size: 2.5em;
+            color: #333;
+            margin: 0;
         }
 
         /* Text above the button */
@@ -54,11 +68,32 @@
             width: 80%;
             box-sizing: border-box; /* Ensures padding doesn't affect width */
         }
+
+        /* Social media links styling */
+        .social-links {
+            margin-top: 20px;
+            font-size: 1em;
+            color: #fff; /* White text for contrast */
+        }
+
+        .social-links a {
+            color: #fff; /* White links */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
     <div class="centered-form">
+        <!-- Logo -->
+        <img src="logo_lottoclub.png" alt="LottoClub Logo" class="logo">
+        <!-- Large Text -->
+        <div class="large-text">LottoClub</div>
         <!-- Text above the button -->
         <div class="donation-text">Clicca il pulsante qua sotto per donare!</div>
         <!-- Improved Warning Message -->
@@ -71,6 +106,12 @@
             <input type="image" src="https://pics.paypal.com/00/s/YjRjZTU5MzYtYzM4My00MGY0LTg0NjAtMTc5NWMwZjI4ZTIx/file.JPG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
             <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
         </form>
+    </div>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://www.youtube.com/lottoclubyt" target="_blank">YouTube</a> | 
+        <a href="https://www.facebook.com/lottoclubyt" target="_blank">Facebook</a>
     </div>
 
 </body>
