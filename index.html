@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <title>Dona a LottoClub</title>
+    <!-- Link to the favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
         /* General page styles */
         body {
@@ -13,7 +14,8 @@
             align-items: center;     /* Vertically centers content */
             height: 100vh;           /* Sets the height to full viewport */
             margin: 0;               /* Removes default margin */
-            background-color: #fff; /* Optional background color */
+            background-color: #f0f0f0; /* Optional background color */
+            font-family: Arial, sans-serif; /* Sets default font */
         }
 
         /* Centering the form */
@@ -26,12 +28,22 @@
             border-radius: 10px;     /* Rounded corners */
             background-color: #fff;  /* White background for form */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+            text-align: center;      /* Center-aligns the text */
+        }
+
+        /* Text above the button */
+        .donation-text {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333; /* Text color */
         }
     </style>
 </head>
 <body>
 
     <div class="centered-form">
+        <!-- Text above the button -->
+        <div class="donation-text">Dona a LottoClub</div>
         <!-- PayPal Donation Form -->
         <form action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="business" value="VD4LLFB4PTRXC" />
