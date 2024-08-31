@@ -1,1 +1,45 @@
-<h1>Ciao!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered PayPal Donation Form</title>
+    <style>
+        /* General page styles */
+        body {
+            display: flex;
+            justify-content: center; /* Horizontally centers content */
+            align-items: center;     /* Vertically centers content */
+            height: 100vh;           /* Sets the height to full viewport */
+            margin: 0;               /* Removes default margin */
+            background-color: #f0f0f0; /* Optional background color */
+        }
+
+        /* Centering the form */
+        .centered-form {
+            display: flex;
+            flex-direction: column; /* Stacks children vertically */
+            align-items: center;     /* Centers children horizontally */
+            padding: 20px;
+            border: 2px solid #ccc;  /* Optional border */
+            border-radius: 10px;     /* Rounded corners */
+            background-color: #fff;  /* White background for form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-form">
+        <!-- PayPal Donation Form -->
+        <form action="https://www.paypal.com/donate" method="post" target="_top">
+            <input type="hidden" name="business" value="VD4LLFB4PTRXC" />
+            <input type="hidden" name="no_recurring" value="0" />
+            <input type="hidden" name="currency_code" value="EUR" />
+            <input type="image" src="https://pics.paypal.com/00/s/YjRjZTU5MzYtYzM4My00MGY0LTg0NjAtMTc5NWMwZjI4ZTIx/file.JPG" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+    </div>
+
+</body>
+</html>
