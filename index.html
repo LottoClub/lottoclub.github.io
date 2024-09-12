@@ -52,7 +52,12 @@
         /* Text above the button */
         .donation-text {
             font-size: 1.2em;
-            margin-bottom: 10px;
+            margin-bottom:30px;
+            color: #333; /* Text color */
+        }
+        .donation-text1 {
+            font-size: 1.2em;
+            margin-bottom: 0px;
             color: #333; /* Text color */
         }
 
@@ -120,11 +125,11 @@
         <img src="logo_lottoclub.png" alt="LottoClub Logo" class="logo">
         <!-- Large Text -->
         <div class="large-text">LottoClub</div>
-        <!-- Text above the button -->
-        <div class="donation-text">Clicca il pulsante qua sotto per donare!</div>
         <!-- Improved Warning Message -->
         <div class="donation-small-text">Assicurati di essere connesso a <strong>https://donazioni.giancarlopisano.it</strong> per evitare eventuali tentativi di truffa.</div>
+        <div class="donation-text"><a href="https://donazioni.giancarlopisano.it/postepay" style="text-decoration: none;">Se vuoi donare al tabacchino o alle Poste Italiane, clicca qui.</a></div>
         <!-- PayPal Donation Form -->
+        <div class="donation-text1">Se vuoi donare con carta o PayPal, clicca il pulsante qua sotto:</div>
         <form action="https://www.paypal.com/donate" method="post" target="_top">
             <input type="hidden" name="business" value="VD4LLFB4PTRXC" />
             <input type="hidden" name="no_recurring" value="0" />
